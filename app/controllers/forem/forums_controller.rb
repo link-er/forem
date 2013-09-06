@@ -1,6 +1,6 @@
 module Forem
   class ForumsController < Forem::ApplicationController
-    load_and_authorize_resource :class => 'Forem::Forum', :only => :show
+    load_and_authorize_resource :class => 'Forem::Forum', :only => :show, :find_by => :slug
     helper 'forem/topics'
 
     def index
