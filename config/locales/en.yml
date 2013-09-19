@@ -151,6 +151,9 @@ en:
           'true': Unpin this topic
           'false': Pin this topic
     post:
+      images: Images
+      add_image: Add image
+      remove_image: Remove image
       buttons:
         reply: Post Reply
         edit: Edit
