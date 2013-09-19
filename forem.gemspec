@@ -23,6 +23,8 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'rails', '~> 4.0.0'
   s.add_dependency 'simple_form', '~> 3.0.0.rc'
+  s.add_dependency 'carrierwave', '~> 0.9.0'
+  s.add_dependency 'cocoon', '~> 1.2.0'
 
   s.add_dependency 'workflow', '0.8.0'
   s.add_dependency 'gemoji', '= 1.1.2'

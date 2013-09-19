@@ -14,6 +14,9 @@ module Forem
       end
     end
 
+    has_many :images, dependent: :destroy
+    accepts_nested_attributes_for :images, :reject_if => :all_blank, :allow_destroy => true
+
     # Used in the moderation tools partial
     attr_accessor :moderation_option
 

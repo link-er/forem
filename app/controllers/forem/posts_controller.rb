@@ -46,7 +46,7 @@ module Forem
     private
 
     def post_params
-      params.require(:post).permit(:text, :reply_to_id)
+      params.require(:post).permit(:text, :reply_to_id, image_attributes: [:img_file, :_destroy])
     end
 
     def authorize_reply_for_topic!
