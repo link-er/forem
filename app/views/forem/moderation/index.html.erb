@@ -1,6 +1,6 @@
 <h2><%= t('.title', :forum => forum) %></h2>
 
-<h3><%= I18n.locale=='ru' ? Russian.p(@posts.count, 'ответ', 'ответа', 'ответов') : t('posts_count', :count => @posts.count, :scope => 'forem.general') %></h3>
+<h3><%= t('posts_count', :count => @posts.count, :scope => 'forem.general') %></h3>
 
 <%= form_tag forem.forum_moderate_posts_url(forum), :method => :put do %>
   <div id='posts'>
